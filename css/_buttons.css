@@ -1,0 +1,10 @@
+.button_default {
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+    padding: 8px 32px;
+}
+
+.button_default:hover {
+    background-color: var(--primary-color-hover) !important;
+    color: var(--secondary-text-color) !important;
+}

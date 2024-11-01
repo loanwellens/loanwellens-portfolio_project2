@@ -1,0 +1,275 @@
+.over_mij_wrapper {
+    margin: 0;
+    padding: 104px 0 160px 0;
+
+    /* background-color: teal; */
+}
+
+.over_mij {
+    padding: 0 20px;
+    gap: 48px;
+
+    /* background-color: firebrick; */
+}
+
+/* .inleiding_content {
+    background-color: rebeccapurple;
+}
+
+.inleiding_img {
+    background-color: green;
+} */
+
+.inleiding_img {
+    position: relative;
+    max-width: 240px;
+    height: auto;
+    padding: 16px;
+    /* background-color: red; */
+}
+
+.inleiding_img .inleiding_img_img {
+    border-radius: 32px;
+}
+
+.inleiding_img .inleiding_img_frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.huismus_section1_img {
+    position: relative;
+    max-width: 240px;
+    height: auto;
+    padding: 16px;
+    /* background-color: red; */
+}
+
+.huismus_section1_img #huismus_section1_img_img {
+    border-radius: 16px;
+}
+
+.huismus_section1_img #huismus_section1_img_frame {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    height: 96%;
+    width: 96%;
+}
+
+.huismus_section2_img {
+    position: relative;
+    max-width: 240px;
+    height: auto;
+    padding: 16px;
+    /* background-color: red; */
+}
+
+.huismus_section2_img #huismus_section2_img_img {
+    border-radius: 16px;
+}
+
+.huismus_section2_img #huismus_section2_img_frame {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    height: 96%;
+    width: 96%;
+}
+
+.huismus_section3_img {
+    position: relative;
+    max-width: 240px;
+    height: auto;
+    padding: 16px;
+    /* background-color: red; */
+}
+
+.huismus_section3_img #huismus_section3_img_img {
+    border-radius: 16px;
+}
+
+.huismus_section3_img #huismus_section3_img_frame {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+/*  Carousel    */
+/*  Zorgen dat carousel blijft plakken bovenaan */
+.carousel_sticky {
+    position: sticky;
+    top: 72px;
+    display: block;
+    z-index: 1;
+    margin: 0 0;
+    /* background-color: yellowgreen; */
+}
+
+.carousel_sticky {
+    /* margin-left: -21%;
+    margin-right: -21%; */
+
+    background-color: var(--neutral-color01);
+}
+
+/*  Zorgt voor witruimte tussen de carousel en de uileg eronder. */
+.over_mij_uitleg {
+    margin-top: 40px;
+}
+
+/* .over_mij_content {
+    background-color: rebeccapurple;
+} */
+
+/*  Carousel bewerken   */
+.carousel-inner {
+    margin-bottom: 0;
+}
+
+.carousel-caption {
+    background-color: rgba(18, 18, 18, 0.6);
+    position: absolute;
+    bottom: 0;
+    border-radius: 40px 40px 0 0;
+    width: 100%;
+    left: 0;
+    padding: 16px 8px;
+    margin: auto;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -16px;
+}
+
+.carousel-caption p {
+    font-size: 14px;
+}
+
+.over_mij_uitleg_muziek figure {
+    padding: 56px 0 32px 0;
+
+    /* background-color: crimson; */
+}
+
+.over_mij_uitleg_muziek figure blockquote{
+    font-size: 28px;
+    color: var(--primary-color);
+    font-family: 'Instrument Serif', serif;
+    font-weight: 800;
+
+    /* background-color: crimson; */
+}
+
+table {
+    font-family: 'Indie Flower', sans-serif;
+    width: 100%;
+    max-width: 650px;
+
+    /* background-color: yellow; */
+}
+
+caption {
+    font-weight: 800;
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 16px;
+    caption-side: top;
+}
+
+.artist {
+    color: var(--primary-color);
+}
+
+th {
+    padding: 4px 0;
+    text-align: center;
+    font-size: 18px;
+    color: var(--neutral-color01);
+    transform: skewX(-10deg);
+    background-color: var(--secondary-color02);
+}
+
+td {
+    padding: 8px 16px;
+    border-bottom: 1px dashed var(--secondary-color03);
+    border-collapse: collapse;
+}
+
+@media (min-width: 480px){
+    .over_mij {
+        padding: 0 8%;
+    }
+}
+
+@media (min-width: 768px) {
+    .over_mij {
+        padding: 0;
+        gap: 56px;
+        width: 70%;
+    }
+
+    .carousel_sticky {
+        margin-left: -21%;
+        margin-right: -21%;
+
+        background-color: var(--neutral-color01);
+    }
+
+    .carousel-inner {
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+    .over_mij_inleiding {
+        flex-direction: row !important;
+        gap: 40px;
+    }
+
+    .over_mij_uitleg {
+        max-width: 650px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .over_mij {
+        padding: 0;
+        width: 80%;
+    }
+
+    .over_mij_inleiding {
+        margin: 0;
+        padding: 0;
+        justify-content: left;
+    }
+
+    .carousel_sticky {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 360px;
+
+        background-color: transparent;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .over_mij_uitleg {
+        margin-left: calc(360px + 40px);
+        margin-top: -370px;
+        max-width: 650px;
+        /* background-color: rebeccapurple; */
+    } 
+}
+
+@media (min-width: 1400px) {
+
+    .over_mij {
+        width: 70%;
+    }
+}

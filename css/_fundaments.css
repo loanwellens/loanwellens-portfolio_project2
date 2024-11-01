@@ -1,0 +1,85 @@
+/*  IMPORT GOOGLE FONTS */
+/*  Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*  Bricolage Grotesque */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+
+/*  Indie Flower    */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/*  Instrument Serif    */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Instrument+Serif:ital@0;1&display=swap');
+
+:root {
+    /*  VARIABELEN  */
+    /*  Tekstkleur  */
+    --main-text-color: #121212;
+    --secondary-text-color: #ffffff;
+
+    /*  Primaire kleuren    */
+    --primary-color: #006868;
+    --primary-color-hover: #004949;
+
+    /*  Secundaire kleuren  */
+    --secondary-color01: #EE79AB;
+    --secondary-color02: #E96736;
+    --secondary-color03: #FFBE58;
+    --secondary-color04: #2A8AD9;
+
+    /*  Neutrals    */
+    --neutral-color01: #ffffff;
+    --neutral-color02: #F3EBE0;
+    --neutral-color03: #121212;
+
+    /*  Font-family */
+    --font-family-p: 'Inter', Arial, sans-serif;
+    --font-family-h: 'Bricolage Grotesque', Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family-p);
+    font-size: 18px;
+    color: var(--main-text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-h);
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/*  Footer aan onderkant pagina plaatsen    */
+.content_wrapper {
+    position: relative;
+    margin-top: 80px;
+    min-height: calc(100vh - 150px);
+    margin: 0;
+    padding: 0;
+
+    /* background-color: rebeccapurple; */
+}
+
+@media (min-width: 576px) {
+    .content_wrapper {
+        margin-top: 80px;
+        min-height: calc(100vh - 174px);
+    }
+}
+
+@media (min-width: 768px) {
+    .content_wrapper {
+        margin-top: 80px;
+        min-height: calc(100vh - 180px);
+    }
+}
+
+@media (min-width: 992px) {
+    .content_wrapper {
+        margin-top: 96px;
+    }
+}

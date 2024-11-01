@@ -1,0 +1,118 @@
+.cv_wrapper {   
+    padding: 104px 0 160px 0;
+    gap: 40px;
+    /* background-color: rebeccapurple; */
+}
+
+.cv {
+    padding: 0 20px;
+    gap: 48px;
+
+    /* background-color: yellowgreen; */
+}
+
+.cv_img {
+    width: 200px;
+}
+
+.cv_column1 {
+    gap: 48px;
+
+    /* background-color: rebeccapurple; */
+}
+
+.cv_tijdspanne {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--primary-color);
+}
+
+.cv_clarification {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 8px;
+    color: var(--secondary-color04);
+}
+
+.vertical_line {
+    color: var(--secondary-color02);
+    margin: 0 8px;
+}
+
+.cv_column1_opleiding ol, .cv_column1_skills ul, .cv_column1_talen ul, .cv_column2 ol{
+    margin: 0;
+    padding-left: 24px;
+}
+
+.cv_column1_opleiding ol li, 
+.cv_column2 ol li, 
+.cv_column1_talen ul li {
+    list-style-image: url("../assets/svg/list_style_type.svg");
+    margin-bottom: 16px;
+
+    /* background-color: aquamarine; */
+}
+
+.cv_column1_opleiding ol li div, 
+.cv_column2 ol li div, 
+.cv_column1_talen ul li {
+    margin-left: 8px;
+}
+
+.cv_column1_skills ul {
+    list-style-type: none;
+    max-width: 500px;
+    padding: 0;
+}
+
+.cv_column1_skills ul li {
+    display: inline-block;
+    border: 1px solid var(--secondary-color03);
+    border-radius: 20px;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+    margin-right: 4px;
+}
+
+/* .carousel {
+    background-color: red;
+} */
+
+@media (min-width: 480px){
+    .cv {
+        padding: 0 8%;
+    }
+}
+
+@media (min-width: 768px) {
+    .cv_wrapper {   
+        gap: 80px;
+    }
+
+    .cv {
+        padding: 0;
+        gap: 56px;
+        width: 80%;
+    }
+
+    .carousel {
+        width: 400px;
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cv {
+        flex-direction: row !important;
+    }
+
+    .carousel {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel {
+        width: 500px;
+    }
+}

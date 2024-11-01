@@ -1,0 +1,55 @@
+.footer_wrapper {
+    background-color: var(--neutral-color03);
+    color: var(--secondary-text-color);
+}
+
+footer {
+    position: relative;
+}
+
+.footer_img {
+    position: absolute;
+    top: -136px;
+    right: 5%;
+    rotate: 96deg;
+
+    /* background-color: tan; */
+}
+
+.footer_content {
+    gap: 32px;
+    padding: 32px 0;
+
+    /* background-color: teal; */
+}
+
+.copyright {
+    text-align: center;
+}
+
+.socials {
+    gap: 24px;
+}
+.socials a svg {
+    fill: var(--neutral-color01);
+}
+
+@media (min-width: 576px) {
+    .copyright {
+        text-align: left;
+    }
+
+    .socials {
+        justify-content: end !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer_img {
+        right: 0;
+    }   
+
+    .footer_content {
+        padding: 40px 0;
+    }
+}

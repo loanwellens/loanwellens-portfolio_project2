@@ -1,0 +1,13 @@
+/*  IMPORT OTHER CSS FILES*/
+@import url(_reset.css);
+@import url(_fundaments.css);
+@import url(_navigation.css);
+@import url(_buttons.css);
+@import url(_gradients.css);
+@import url(_home.css);
+@import url(_ervaring.css);
+@import url(_curriculum_vitae.css);
+@import url(_over_mij.css);
+@import url(_contact.css);
+@import url(_project.css);
+@import url(_footer.css);

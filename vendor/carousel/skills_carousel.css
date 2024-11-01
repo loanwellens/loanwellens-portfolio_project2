@@ -1,0 +1,6 @@
+.slick-slide {
+    margin: 0 16px; /*Ruimte tussen de fotos*/
+}
+.slick-slide img {
+    width: 100%; /*Responsive afbeeldingen*/
+}

@@ -1,0 +1,126 @@
+/*  LOGO    */
+.navbar-brand {
+    width: 56px;
+    height: 56px;
+}
+
+.navbar {
+    background-color: var(--neutral-color01);
+}
+
+/*  HAMBURGERMENU   */
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+/*  Hamburger lijnjes */
+.toggler-icon,
+.navbar-toggler.collapsed .toggler-icon{
+    width: 30px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: var(--neutral-color03);
+    display: block;
+    transition: all 0.2s;
+}
+
+/* Plaats tussen de lijntjes */
+.middle-bar{
+    margin: 5px auto;
+}
+
+/* Hamburger default */
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+/* Hamburger actief */
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+/*  NAVIGATIEITEMS  */
+.navbar-nav {
+    margin-left: auto; /*Navigatie items aan rechterkant plaatsen   */
+
+    /* background-color: teal; */
+}
+
+.nav-link, 
+.nav-link .active{
+    color: var(--main-text-color);
+    margin: 8px 0 8px 24px;
+    min-height: 40px;
+}
+/*  Schermen groter dan 768px */
+@media (min-width: 768px) {
+    .navbar {
+       padding: 8px 16px; 
+    }
+    
+    .nav-item {
+        padding: 8px 8px !important;
+        margin-left: 0 8px;
+        /* background-color: yellow; */
+    }
+
+    .nav-link {
+        margin: 0;
+        position: relative;
+        /* background-color: green; */
+    }
+
+    .nav-link::after{
+        content: ""; /*Niks achter tekst achter het menu item plakken*/
+        position: absolute; /* Lijntje plaatsen gebaseerd op locatie van het item met position relative*/
+        background-color: var(--primary-color); /* Kleur lijntje */
+        height: 2px; /* Hoogte lijntje */
+        width: 0; /* width: 0 = lijntje nog niet zichtbaar*/
+        left: 0;
+        bottom: 0px; /*Plaats tussen link item en lijntje */
+        border-radius: 2px;
+        transition: 0.25s ease-in;
+    }
+    
+    .nav-link:hover::after{ 
+        width: 100%; /*width:100% lijntje tonen*/
+    }
+    
+    .nav-link:active {
+        color: var(--primary-color);
+    }
+}
+
+/*  Schermen groter dan 992px */
+@media (min-width: 992px) {
+    .navbar {
+       padding: 16px 72px; 
+    }
+
+    .nav-item {
+        padding: 8px 16px !important;
+    }
+}
